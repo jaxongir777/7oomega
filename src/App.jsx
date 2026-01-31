@@ -8,13 +8,12 @@ import './App.css';
 function App() {
   const [open, setOpen] = useState(false);
 
-  // Scroll funksiyasi
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
     }
-    setOpen(false); // Burger menu bo‘lsa yopish
+    setOpen(false); 
   };
 
   return (
@@ -25,7 +24,6 @@ function App() {
           <div className='header-container'>
             <h1 className='header-title'>Omega</h1>
 
-            {/* Desktop menu */}
             <ul className={`header-list ${open ? 'active' : ''}`}>
               <li className='header-item dropdown'>
                 <a href="#" className='header-link' onClick={(e) => e.preventDefault()}>
@@ -73,7 +71,6 @@ function App() {
               </button>
             </ul>
 
-            {/* Burger menu */}
             <div className='burger' onClick={() => setOpen(!open)}>
               <span></span>
               <span></span>
@@ -83,7 +80,6 @@ function App() {
         </div>
       </header>
 
-      {/* HERO SECTION */}
       <section id="hero" className='hero'>
         <div className='container'>
           <div className='hero-container'>
@@ -102,7 +98,6 @@ function App() {
         </div>
       </section>
 
-      {/* TESTIMONIAL SECTION */}
       <section id="testimonials" className='section'>
         <div className='container'>
           <div className='section-container'>
@@ -122,12 +117,10 @@ function App() {
         </div>
       </section>
 
-      {/* FEATURE SECTION 1 */}
       <section id="feature1" className="feature">
         <div className="container">
           <div className="feature-container">
 
-            {/* LEFT */}
             <div className="feature-left">
               <h2 className="feature-title">
                 Making trip is fun.<br />
@@ -161,7 +154,6 @@ function App() {
               </ul>
             </div>
 
-            {/* RIGHT */}
             <div className="feature-right">
               <img src={img} alt="App preview" />
             </div>
@@ -170,17 +162,14 @@ function App() {
         </div>
       </section>
 
-      {/* FEATURE SECTION 2 */}
       <section id="feature2" className="feature-section">
         <div className="feature-wrapper">
           <div className="feature-flex">
 
-            {/* LEFT: IMAGE */}
             <div className="feature-img-container">
               <img src={imgg} alt="App preview" />
             </div>
 
-            {/* RIGHT: TEXT */}
             <div className="feature-content">
               <h2 className="feature-heading">
                 See the world & spend less always.
@@ -195,12 +184,10 @@ function App() {
         </div>
       </section>
 
-      {/* FEATURE SECTION 3 */}
       <section id="feature3" className="feature">
         <div className="container">
           <div className="feature-container">
 
-            {/* LEFT */}
             <div className="feature-left">
               <h2 className="feature-title">
                 Improving your travel experience.
@@ -211,7 +198,6 @@ function App() {
               </p>
             </div>
 
-            {/* RIGHT */}
             <div className="feature-right">
               <img src={phone} alt="App preview" />
             </div>
@@ -220,8 +206,8 @@ function App() {
         </div>
       </section>
 
-      {/* FOOTER CTA */}
-      <section id="footer" className="footer-section">
+
+      <footer id="footer" className="footer-section">
         <div className="footer-container">
           <h2 className="footer-title">Get the app now</h2>
 
@@ -248,7 +234,7 @@ function App() {
             </a>
           </div>
         </div>
-      </section>
+      </footer>
     </>
   );
 }

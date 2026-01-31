@@ -1,6 +1,4 @@
-/* =========================
-   GENERAL STYLES
-========================= */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -97,7 +95,6 @@ body {
   border-radius: 2px;
 }
 
-/* Burger menu active */
 .header-list.active {
   display: flex;
   flex-direction: column;
@@ -140,17 +137,12 @@ body {
   color: #4A3AFF;
   background: #F5F6FF;
 }
-
-/* Hover bo‘lganda chiqadi */
 .dropdown:hover .dropdown-menu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
 
-/* =========================
-   HERO SECTION
-========================= */
 .hero {
   background: #f0f0ff;
   padding: 140px 20px 80px;
@@ -207,14 +199,9 @@ body {
   font-weight: 500;
 }
 
-/* =========================
-   SECTION TESTIMONIALS
-/* =========================
-   SECTION TESTIMONIALS
-========================= */
 .section {
   padding: 100px 20px;
-  background: #5454D4; /* fon rangi */
+  background: #5454D4; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,16 +214,16 @@ body {
 
 .section-list {
   display: flex;
-  flex-wrap: wrap; /* mobilga moslash uchun */
+  flex-wrap: wrap; 
   gap: 30px;
-  justify-content: center; /* markazlash */
+  justify-content: center; 
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
 .section-item {
-  flex: 1 1 45%; /* yonma-yon bo‘lishi, ekran kichik bo‘lsa pastga tushadi */
+  flex: 1 1 45%; 
 }
 
 .section-text {
@@ -252,16 +239,14 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Hover effekti */
 .section-text:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .section-item {
-    flex: 1 1 100%; /* kichik ekranlarda pastga tushadi */
+    flex: 1 1 100%; 
   }
 
   .section-text {
@@ -277,10 +262,6 @@ body {
   }
 }
 
-
-/* =========================
-   FEATURE SECTION
-========================= */
 .feature {
   background: #ffffff;
   padding: 120px 20px;
@@ -295,7 +276,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* LEFT */
 .feature-left {
   max-width: 520px;
 }
@@ -314,7 +294,6 @@ body {
   margin-bottom: 50px;
 }
 
-/* LIST */
 .feature-list {
   display: flex;
   flex-direction: column;
@@ -351,7 +330,6 @@ body {
   line-height: 1.6;
 }
 
-/* RIGHT */
 .feature-right img {
   max-width: 380px;
   width: 100%;
@@ -359,9 +337,6 @@ body {
   box-shadow: 0 40px 80px rgba(0,0,0,0.2);
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
 @media (max-width: 1024px) {
   .feature-container {
     flex-direction: column;
@@ -431,9 +406,6 @@ body {
     width: 100%;
   }
 }
-/* =========================
-   FEATURE SECTION
-========================= */
 .feature-section {
   background: #ffffff;
   padding: 120px 20px;
@@ -449,10 +421,9 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 80px;
-  flex-wrap: wrap; /* mobil uchun */
+  flex-wrap: wrap; 
 }
 
-/* LEFT: IMAGE */
 .feature-img-container img {
   max-width: 380px;
   width: 100%;
@@ -460,7 +431,6 @@ body {
   box-shadow: 0 40px 80px rgba(0,0,0,0.2);
 }
 
-/* RIGHT: TEXT */
 .feature-content {
   max-width: 520px;
 }
@@ -479,7 +449,6 @@ body {
   margin-bottom: 50px;
 }
 
-/* LIST */
 .feature-points {
   display: flex;
   flex-direction: column;
@@ -519,7 +488,6 @@ body {
   line-height: 1.6;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1024px) {
   .feature-flex {
     flex-direction: column;
@@ -566,9 +534,6 @@ body {
   object-fit: cover;
   border-radius: 16px;
 }
-/* =========================
-   FOOTER CTA SECTION
-========================= */
 
 .footer-section {
   background: #0b0b0b;
@@ -595,7 +560,6 @@ body {
   margin-bottom: 60px;
 }
 
-/* BUTTONS */
 .footer-buttons {
   display: flex;
   justify-content: center;
